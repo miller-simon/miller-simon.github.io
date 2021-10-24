@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Your Name's Website</title>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Arial", sans-serif;
+}
+h1 {text-align: center;}
+h4{
+  margin-bottom: 0px;
+}
+p{
+  margin-top: 0px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #660404;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 16px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.button {
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  }
+</style>
+</head>
+
 <body>
-    <section class="hero is-fullheight is-dark">
-        <div class="hero-body">
-            <div class="container">
-            <div class="columns is-vcentered is-centered">
-                <div class="column is-6">
-                    <div class="block">
-                        <h1 class="title is-2">Welcome to Your Name's Website.</h1>
-                    </div>
-                    <div class="block">
-                        <h2 class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
-                        </h2>
-                    </div>
-                    <div class="block buttons">
-                        <a href="https://twitter.com/"><button class="button is-white is-outlined">Visit my Twitter</button></a>
-                    	<a href="./another_page.html">Take me to that other page</a>
-		    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+<div class="sidenav">
+  <a href="./index.html">About</a>
+  <a href="./interests.html">Interests</a>
+  <a href="./past_work.html">Past work</a>
+</div>
+<div class="main">
+  <h1>Hi there! I'm Simon Miller.</h1>
+  <h1><img src="./photos/SimonMiller.jpg" alt="Personal photo" style="width: 33%"></h1>
+  <p>I was born and raised in the suburbs of Detroit, MI. I developed an early appreciation for math and science, and later learned
+	that I loved to apply these areas to microeconomic issues. I studied a blend of mathematics, computer science, economics at Oakland University in Rochester,
+	MI. I currently work in business analytics and am based out of Richmond, VA.</p>
+  <p>I am interested in helping people create data-driven solutions to problems. I am also interested in helping students develop their appreciation for math
+	and science. Feel free to reach out to discuss related ideas and opportunities.</p>
+<div class="button";>
+	<a href="https://www.linkedin.com/in/simon-miller-02020/">
+		<button style = "background-color: #660404; color: #ffffff; font-size: 20px; border: #660404;">Visit my LinkedIn</button></a>
+	<a href="https://twitter.com/SimonMiIIer">
+		<button style = "background-color: #660404; color: #ffffff; font-size: 20px; border: #660404;">Visit my Twitter</button></a>
+</div>
+</div>
 </body>
 </html>
